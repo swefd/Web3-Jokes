@@ -1,0 +1,19 @@
+{
+  "name": "web3-jokes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/swefd/Web3-Jokes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/swefd/Web3-Jokes/issues"
+  },
+  "homepage": "https://github.com/swefd/Web3-Jokes#readme"
+}
