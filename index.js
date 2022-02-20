@@ -7,6 +7,7 @@ const dataPath = path.join(__dirname, 'data');
 const server = http.createServer((req, res) => {
     if (req.url == '/jokes' && req.method == 'GET') {
         getAllJokes(req, res);
+
     }
     if (req.url == '/jokes' && req.method == 'POST') {
         addJoke(req, res);
@@ -34,7 +35,13 @@ function addJoke(req, res) {
     req.on('data', function(chunk) {
         data += chunk;
     });
+
+    console.log(data)
+
+
     req.on('end', function() {
+
+        console.log(data)
         let joke = JSON.parse(data);
         joke.likes = 0;
         joke.dislikes = 0;
